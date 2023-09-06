@@ -1,0 +1,76 @@
+
+$myColor: rgb(238, 236, 236);
+$myBackgroundColor:black;
+$spanColor:rgb(59, 58, 58);
+$spanHoverColor:rgb(101, 101, 101);
+$borderColor:rgb(101, 99, 99);
+$actColor:rgb(212, 167, 19);
+$actHoverColor:rgb(218, 181, 57);
+$resultactbackground:rgb(179, 177, 177);
+$resultacHovertbackground:rgb(202, 201, 201);
+.calc{
+    color:$myColor;
+    width: 30%;
+    background-color: $myBackgroundColor;
+    margin: auto;
+    margin-top: 7%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.calc .row{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+ .calc #result{
+    padding: 0.5rem 1rem;
+    background-color: $myBackgroundColor;
+    color: $myColor;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+ }
+
+ .calc span{
+    margin: auto;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: $spanColor;
+    border: 1px solid $borderColor;
+    font-weight: bold;
+ }
+ .calc span:hover{
+    background-color: $spanHoverColor;
+ }
+ 
+ .calc .row .act span{
+    background-color: $actColor;
+ }
+
+ .calc .row .act span:hover{
+    background-color: $actHoverColor;
+ }
+ .calc .row .resultact span{
+    color: black;
+    background-color: $resultactbackground;
+ }
+ .calc .row .resultact span:hover{
+    background-color: $resultacHovertbackground;
+ }
+
+ @media screen and (max-width: 480px) {
+    .calc{
+        width: 100%;
+        padding: 5px;
+  }
+  
+}
+@media screen and (max-width: 950px) {
+    .calc{
+        width: 70%;
+        padding: 5px;
+  }
+  
+}
